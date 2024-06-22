@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-zinc-100 dark:bg-zinc-900">
+    <div class="main-container min-h-screen flex flex-col items-center justify-center">
+      <header class="w-full flex justify-between items-center p-4 bg-white dark:bg-zinc-800">
+        <div class="flex items-center space-x-2">
+          <img src="icons/small_logo.png" alt="Small Logo" class="h-8 w-8">
+          <div class="text-xl font-bold">
+            <span class="text-orange-600">HB</span><span class="text-black">.</span>
+          </div>
+          <input type="image" src="icons/profile.png" alt="Profile Button" class="h-8 w-8">
+        </div>
+        <div class="flex items-center space-x-4">
+          <input type="image" src="icons/settings.png" alt="Settings Button" class="h-7 w-7">
+          <img src="icons/search.png" alt="Search Icon" class="h-6 w-6">
+          <input type="text" placeholder="Search" class="mt-1 px-3 py-2 border border-zinc-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm">
+        </div>
+      </header>
+      
+      <main class="flex flex-1 w-full max-w-6xl mx-auto bg-white dark:bg-zinc-800 shadow-lg rounded-lg overflow-hidden">
+        <div class="w-1/2 p-8 bg-zinc-50 dark:bg-zinc-700">
+          <div class="mb-8">
+            <img src="icons/binary_bg.png" alt="Binary Cloud" class="h-50 w-100">
+            <h2 class="text-2xl font-bold mb-4">You're on <span class="text-orange-500">HOTBEANS</span>.</h2>
+            <p class="text-zinc-600 dark:text-zinc-300">Web/dev experts!</p>
+          </div>
+          <form class="space-y-4" onsubmit="handleLogin(event)">
+            <div>
+              <img src="icons/profile.png" alt="User Icon" class="h-12 w-12 mb-4">
+              <label for="email" class="block text-sm font-medium text-zinc-700 dark:text-zinc-300">Email</label>
+              <input type="email" id="email" class="mt-1 block w-full px-3 py-2 border border-zinc-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm" placeholder="Your Email Here...">
+            </div>
+            <div>
+              <label for="password" class="block text-sm font-medium text-zinc-700 dark:text-zinc-300">Password</label>
+              <input type="password" id="password" class="mt-1 block w-full px-3 py-2 border border-zinc-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm" placeholder="Your Password Here...">
+            </div>
+            <div class="flex items-center justify-between">
+              <button type="button" class="bg-orange-500 text-white px-4 py-2 rounded-md" onclick="window.location.href='landing.html';">Login</button>
+              <div class="text-sm">
+                <a href="#" class="font-medium text-orange-600 hover:text-orange-500">Forgot password?</a>
+                <a href="#" class="font-medium text-orange-600 hover:text-orange-500 ml-4">Privacy</a>
+              </div>
+            </div>
+            <button type="button" class="w-full flex items-center justify-center bg-white border border-zinc-300 text-zinc-700 px-4 py-2 rounded-md shadow-sm hover:bg-zinc-50">
+              <img src="icons/google_logo.png" alt="Google Icon" class="h-5 w-5 mr-2">
+              Sign in with Google
+            </button>
+          </form>
+        </div>
+        <div class="w-1/2 p-8 flex items-center justify-center relative">
+          <img src="icons/hotbeans_logo.png" alt="Large HB Icon" class="absolute inset-0 w-full h-full object-cover opacity-65">
+        </div>
+      </main>
+      <footer class="w-full p-4 bg-white dark:bg-zinc-800 text-center">
+        <span class="text-sm text-zinc-600 dark:text-zinc-300">ENG/Language options</span>
+      </footer>
+    </div>
+    <script>
+      function handleLogin(event) {
+        event.preventDefault(); 
+        window.location.href = 'landing.html'; 
+      }
+    </script>
+  </body>
+</html>
+
+<footer class="bg-gray-900 text-gray-300 py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-6 md:mb-0">
+        <h2 class="text-lg font-bold">HOTBEANS Web Development</h2>
+        <p class="mt-2">&copy; 2024 HOTBEANS. All rights reserved.</p>
+        <p class="mt-1">Contact: info@hotbeans.dev | +44 456 7890</p>
+      </div>
+      <div class="flex space-x-6">
+        <a href="#" aria-label="Instagram">
+          <img aria-hidden="true" alt="instagram" src="icons/instagram.png" class="w-6 h-6" />
+        </a>
+        <a href="#" aria-label="Facebook">
+          <img aria-hidden="true" alt="facebook" src="icons/facebook.png" class="w-6 h-6" />
+        </a>
+        <a href="#" aria-label="X">
+          <img aria-hidden="true" alt="x" src="icons/twitter.png" class="w-6 h-6" />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,221 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="w-full flex justify-between items-center p-4 bg-white dark:bg-zinc-800 fixed top-0 left-0 z-50 border-b border-zinc-200 dark:border-zinc-700">
+      <div class="flex items-center space-x-2">
+        <a href="landing.html">
+          <img src="icons/small_logo.png" alt="Small Logo Button" class="h-8 w-auto">
+        </a>
+        <div class="text-xl font-bold">
+          <span class="text-orange-600">HB</span><span class="text-black">.</span>
+        </div>
+        <a href="profile.html" class="h-8 w-8 flex items-center justify-center rounded-full overflow-hidden focus:outline-none focus:ring-2 focus:ring-orange-500">
+          <img src="icons/profile.png" alt="Profile Button" class="h-full w-full">
+        </a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="settings.html" class="h-7 w-7 flex items-center justify-center rounded-full overflow-hidden focus:outline-none focus:ring-2 focus:ring-orange-500">
+          <img src="icons/settings.png" alt="Settings Button" class="h-full w-full">
+        </a>
+        <img src="icons/search.png" alt="Search Icon" class="h-6 w-6">
+        <input type="text" placeholder="Search" class="mt-1 px-3 py-2 border border-zinc-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm">
+      </div>
+    </header>
+    <div class="main-container min-h-screen flex flex-col pt-24 w-full max-w-6xl mx-auto">
+      <nav class="flex justify-center space-x-8 py-2 border-b border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 fixed top-16 left-0 w-full z-40">
+        <a href="courses.html" class="text-zinc-700 dark:text-zinc-300 font-semibold relative group">
+          Courses
+          <span class="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-orange-500 to-orange-700 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="applications.html" class="text-zinc-700 dark:text-zinc-300 font-semibold relative group">
+          Join our team
+          <span class="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-orange-500 to-orange-700 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="news.html" class="text-zinc-700 dark:text-zinc-300 font-semibold relative group">
+          Company news
+          <span class="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-orange-500 to-orange-700 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </nav>
+
+      <main
+    class="flex flex-1 w-full max-w-4xl mx-auto bg-white dark:bg-zinc-800 shadow-lg rounded-lg overflow-hidden"
+  >
+    <div class="w-full p-8">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-3xl font-bold">Settings</h2>
+        <img src="icons/settings.png" alt="Settings Icon" class="h-12 w-12" />
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="flex items-center">
+          <img src="icons/settings_username.png" alt="User Icon" class="h-6 w-6 mr-3" />
+          <div class="flex-1">
+            <label for="username" class="block text-sm font-medium text-zinc-700 dark:text-zinc-300"
+              >Username</label
+            >
+            <input
+              type="text"
+              id="username"
+              class="mt-1 block w-full px-3 py-2 border border-zinc-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+              placeholder="Change your username"
+            />
+          </div>
+        </div>
+        <div class="flex items-center">
+          <img src="icons/settings_email.png" alt="Email Icon" class="h-6 w-6 mr-3" />
+          <div class="flex-1">
+            <label for="email" class="block text-sm font-medium text-zinc-700 dark:text-zinc-300"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="mt-1 block w-full px-3 py-2 border border-zinc-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+              placeholder="Change your email"
+            />
+          </div>
+        </div>
+        <div class="flex items-center">
+          <img src="icons/settings_password.png" alt="Password Icon" class="h-6 w-6 mr-3" />
+          <div class="flex-1">
+            <label for="password" class="block text-sm font-medium text-zinc-700 dark:text-zinc-300"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              class="mt-1 block w-full px-3 py-2 border border-zinc-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+              placeholder="Change your password"
+            />
+          </div>
+        </div>
+        <div class="flex items-center">
+          <img src="icons/settings_notifications.png" alt="Notification Icon" class="h-6 w-6 mr-3" />
+          <div class="flex-1">
+            <label
+              for="notifications"
+              class="block text-sm font-medium text-zinc-700 dark:text-zinc-300"
+              >Notifications</label
+            >
+            <select
+              id="notifications"
+              class="mt-1 block w-full px-3 py-2 border border-zinc-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+            >
+              <option>Email</option>
+              <option>SMS</option>
+              <option>Push Notifications</option>
+              <option>Opt Out</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <img src="icons/settings_theme.png" alt="Theme Icon" class="h-6 w-6 mr-3" />
+          <div class="flex-1">
+            <label for="theme" class="block text-sm font-medium text-zinc-700 dark:text-zinc-300"
+              >Theme</label
+            >
+            <select
+              id="theme"
+              class="mt-1 block w-full px-3 py-2 border border-zinc-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+            >
+              <option>Light</option>
+              <option>Dark</option>
+              <option>System</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <img src="icons/settings_birthday.png" alt="Birthday Icon" class="h-6 w-6 mr-3" />
+          <div class="flex-1">
+            <label for="birthday" class="block text-sm font-medium text-zinc-700 dark:text-zinc-300"
+              >Birthday</label
+            >
+            <input
+              type="date"
+              id="birthday"
+              class="mt-1 block w-full px-3 py-2 border border-zinc-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+            />
+          </div>
+        </div>
+        <div class="flex items-center">
+          <img src="icons/settings_gender.png" alt="Gender Icon" class="h-6 w-6 mr-3" />
+          <div class="flex-1">
+            <label for="gender" class="block text-sm font-medium text-zinc-700 dark:text-zinc-300"
+              >Gender</label
+            >
+            <select
+              id="gender"
+              class="mt-1 block w-full px-3 py-2 border border-zinc-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+            >
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+              <option>Prefer not to say</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <img src="icons/settings_language.png" alt="Language Icon" class="h-6 w-6 mr-3" />
+          <div class="flex-1">
+            <label for="language" class="block text-sm font-medium text-zinc-700 dark:text-zinc-300"
+              >Language</label
+            >
+            <select
+              id="language"
+              class="mt-1 block w-full px-3 py-2 border border-zinc-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+            >
+              <option>🇬🇧 English</option>
+              <option>🇪🇸 Español</option>
+              <option>🇫🇷 Français</option>
+              <option>🇩🇪 Deutsch</option>
+              <option>🇮🇹 Italiano</option>
+              <option>🇯🇵 日本語</option>
+              <option>🇨🇳 中文</option>
+              <option>🇷🇺 Русский</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="mt-6">
+        <button
+          type="button"
+          class="bg-orange-500 text-white px-4 py-2 rounded-md"
+          onclick="saveSettings()"
+        >
+          Save Settings
+        </button>
+      </div>
+    </div>
+  </main>
+</div>
+<script>
+  function saveSettings() {
+    alert('Settings saved successfully!');
+  }
+</script>
+
+<footer class="bg-gray-900 text-gray-300 py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-6 md:mb-0">
+        <h2 class="text-lg font-bold">HOTBEANS Web Development</h2>
+        <p class="mt-2">&copy; 2024 HOTBEANS. All rights reserved.</p>
+        <p class="mt-1">Contact: info@hotbeans.dev | +44 456 7890</p>
+      </div>
+      <div class="flex space-x-6">
+        <a href="#" aria-label="Instagram">
+          <img aria-hidden="true" alt="instagram" src="icons/instagram.png" class="w-6 h-6" />
+        </a>
+        <a href="#" aria-label="Facebook">
+          <img aria-hidden="true" alt="facebook" src="icons/facebook.png" class="w-6 h-6" />
+        </a>
+        <a href="#" aria-label="X">
+          <img aria-hidden="true" alt="x" src="icons/twitter.png" class="w-6 h-6" />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

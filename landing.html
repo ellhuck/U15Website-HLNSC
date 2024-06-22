@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="w-full flex justify-between items-center p-4 bg-white dark:bg-zinc-800 fixed top-0 left-0 z-50 border-b border-zinc-200 dark:border-zinc-700">
+      <div class="flex items-center space-x-2">
+        <a href="landing.html">
+          <img src="icons/small_logo.png" alt="Small Logo Button" class="h-8 w-auto">
+        </a>
+        <div class="text-xl font-bold">
+          <span class="text-orange-600">HB</span><span class="text-black">.</span>
+        </div>
+        <a href="profile.html" class="h-8 w-8 flex items-center justify-center rounded-full overflow-hidden focus:outline-none focus:ring-2 focus:ring-orange-500">
+          <img src="icons/profile.png" alt="Profile Button" class="h-full w-full">
+        </a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="settings.html" class="h-7 w-7 flex items-center justify-center rounded-full overflow-hidden focus:outline-none focus:ring-2 focus:ring-orange-500">
+          <img src="icons/settings.png" alt="Settings Button" class="h-full w-full">
+        </a>
+        <img src="icons/search.png" alt="Search Icon" class="h-6 w-6">
+        <input type="text" placeholder="Search" class="mt-1 px-3 py-2 border border-zinc-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm">
+      </div>
+    </header>
+    <div class="main-container min-h-screen flex flex-col pt-24 w-full max-w-6xl mx-auto">
+      <nav class="flex justify-center space-x-8 py-2 border-b border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 fixed top-16 left-0 w-full z-40">
+        <a href="courses.html" class="text-zinc-700 dark:text-zinc-300 font-semibold relative group">
+          Courses
+          <span class="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-orange-500 to-orange-700 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="applications.html" class="text-zinc-700 dark:text-zinc-300 font-semibold relative group">
+          Join our team
+          <span class="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-orange-500 to-orange-700 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="news.html" class="text-zinc-700 dark:text-zinc-300 font-semibold relative group">
+          Company news
+          <span class="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-orange-500 to-orange-700 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </nav> 
+  <main class="flex-grow p-8">
+    <section class="mb-8">
+      <h1 class="text-4xl font-bold">
+        Hello, <span class="text-orange-600">User</span> <span class="wave">👋</span>
+      </h1>
+    </section>
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-4">Defining our company:</h2>
+      <div class="bg-gradient-to-br from-zinc-100 to-zinc-300 rounded-xl shadow-lg p-8 my-8 text-zinc-800 transition-all duration-300 hover:shadow-2xl">
+        <p class="text-lg leading-relaxed font-light mb-4">
+          <span class="font-bold text-xl">Your World Of Websites Awaits...</span> We’re so glad you’re here! You are now part of a growing community of web designers creating, collaborating, and connecting across the globe via HOTBEANS.
+        </p>
+        <p class="text-lg leading-relaxed font-light mb-4">
+          Whether you’ve joined to create something of your own or just to connect with others, we’ve got something for you. Our journey started in a quaint coffee shop, where a group of friends passionate about web design envisioned a platform where creativity could flourish without boundaries.
+        </p>
+        <p class="text-lg leading-relaxed font-light mb-4">
+          Today, that vision has grown into a vibrant network of designers, developers, and enthusiasts who share a common goal: to push the boundaries of what's possible on the web. From sleek portfolios to dynamic e-commerce sites, our members are crafting the future of the internet, one project at a time.
+        </p>
+        <p class="text-lg leading-relaxed font-light">
+          <span class="font-bold text-xl">You are now with us, HOTBEANS</span>, where your web design dreams become reality.
+        </p>
+      </div>
+    </section>
+    <section class="mb-8">
+      <div class="container mx-auto p-6">
+        <h1 class="text-4xl font-bold text-center mb-12">Meet the Team</h1>
+        <div class="flex justify-center gap-8 overflow-x-auto">
+          <div class="bg-orange dark:bg-zinc-800 shadow-lg rounded-lg p-6 text-center min-w-[300px] bg-orange-400 bg-opacity-50 dark:bg-opacity-50">
+            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="icons/worker_1.jpg" alt="Team Member 1">
+            <h2 class="text-xl font-semibold mb-2">Harold Painman</h2>
+            <p class="text-zinc-600 dark:text-zinc-400">Lead Designer</p>
+          </div>
+          <div class="bg-orange dark:bg-zinc-800 shadow-lg rounded-lg p-6 text-center min-w-[300px] bg-orange-400 bg-opacity-50 dark:bg-opacity-50">
+            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="icons/worker_2.jpg" alt="Team Member 2">
+            <h2 class="text-xl font-semibold mb-2">Jane Smith</h2>
+            <p class="text-zinc-600 dark:text-zinc-400">Senior Developer</p>
+          </div>
+          <div class="bg-orange dark:bg-zinc-800 shadow-lg rounded-lg p-6 text-center min-w-[300px] bg-orange-400 bg-opacity-50 dark:bg-opacity-50">
+            <img class="w-24 h-24 rounded-full mx-auto mb-4" src="icons/worker_3.jpg" alt="Team Member 3">
+            <h2 class="text-xl font-semibold mb-2">Amy Huang</h2>
+            <p class="text-zinc-600 dark:text-zinc-400">Project Manager</p>
+          </div>
+        </div>
+        <p class="text-center text-zinc-600 dark:text-zinc-400 mt-12">Our team combines creativity, technical expertise, and project management to deliver outstanding results.</p>
+      </div>
+    </section>
+  </main>
+</div>
+  </body>
+</html>
+
+<footer class="bg-gray-900 text-gray-300 py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-6 md:mb-0">
+        <h2 class="text-lg font-bold">HOTBEANS Web Development</h2>
+        <p class="mt-2">&copy; 2024 HOTBEANS. All rights reserved.</p>
+        <p class="mt-1">Contact: info@hotbeans.dev | +44 456 7890</p>
+      </div>
+      <div class="flex space-x-6">
+        <a href="#" aria-label="Instagram">
+          <img aria-hidden="true" alt="instagram" src="icons/instagram.png" class="w-6 h-6" />
+        </a>
+        <a href="#" aria-label="Facebook">
+          <img aria-hidden="true" alt="facebook" src="icons/facebook.png" class="w-6 h-6" />
+        </a>
+        <a href="#" aria-label="X">
+          <img aria-hidden="true" alt="x" src="icons/twitter.png" class="w-6 h-6" />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

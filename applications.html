@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="w-full flex justify-between items-center p-4 bg-white dark:bg-zinc-800 fixed top-0 left-0 z-50 border-b border-zinc-200 dark:border-zinc-700">
+      <div class="flex items-center space-x-2">
+        <a href="landing.html">
+          <img src="icons/small_logo.png" alt="Small Logo Button" class="h-8 w-auto">
+        </a>
+        <div class="text-xl font-bold">
+          <span class="text-orange-600">HB</span><span class="text-black">.</span>
+        </div>
+        <a href="profile.html" class="h-8 w-8 flex items-center justify-center rounded-full overflow-hidden focus:outline-none focus:ring-2 focus:ring-orange-500">
+          <img src="icons/profile.png" alt="Profile Button" class="h-full w-full">
+        </a>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="settings.html" class="h-7 w-7 flex items-center justify-center rounded-full overflow-hidden focus:outline-none focus:ring-2 focus:ring-orange-500">
+          <img src="icons/settings.png" alt="Settings Button" class="h-full w-full">
+        </a>
+        <img src="icons/search.png" alt="Search Icon" class="h-6 w-6">
+        <input type="text" placeholder="Search" class="mt-1 px-3 py-2 border border-zinc-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm">
+      </div>
+    </header>
+    <div class="main-container min-h-screen flex flex-col pt-24 w-full max-w-6xl mx-auto">
+      <nav class="flex justify-center space-x-8 py-2 border-b border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 fixed top-16 left-0 w-full z-40">
+        <a href="courses.html" class="text-zinc-700 dark:text-zinc-300 font-semibold relative group">
+          Courses
+          <span class="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-orange-500 to-orange-700 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="applications.html" class="text-zinc-700 dark:text-zinc-300 font-semibold relative group">
+          Join our team
+          <span class="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-orange-500 to-orange-700 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="news.html" class="text-zinc-700 dark:text-zinc-300 font-semibold relative group">
+          Company news
+          <span class="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-orange-500 to-orange-700 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </nav>
+
+     <div class="min-h-screen bg-zinc-100 dark:bg-zinc-900 text-zinc-900 dark:text-zinc-100">
+  <div class="container mx-auto p-4">
+    <div class="bg-white dark:bg-zinc-800 shadow-md rounded-lg overflow-hidden">
+      <div class="p-4">
+        <h1 class="text-3xl font-bold mb-4">Join Our<span class="text-orange-600"> Team</span></h1>
+        <div class="mb-8 p-4 bg-zinc-200 dark:bg-zinc-700 rounded-lg">
+          <p class="text-zinc-700 dark:text-zinc-300">We are a dynamic web development company dedicated to building innovative and responsive websites. Join our team to work on exciting projects, collaborate with talented professionals, and grow your career in a supportive and inclusive environment.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-zinc-200 dark:bg-zinc-700 p-4 rounded-lg">
+            <h2 class="text-xl font-bold mb-2">Frontend Developer</h2>
+            <p class="text-zinc-700 dark:text-zinc-300 mb-4">We are looking for a skilled frontend developer with experience in HTML, CSS, and JavaScript. Join us to create stunning, user-friendly interfaces.</p>
+            <a href="applications_go_ahead.html" class="block text-center bg-orange-500 text-white p-2 rounded">Apply here</a>
+          </div>
+          <div class="bg-zinc-200 dark:bg-zinc-700 p-4 rounded-lg">
+            <h2 class="text-xl font-bold mb-2">Backend Developer</h2>
+            <p class="text-zinc-700 dark:text-zinc-300 mb-4">We need a backend developer proficient in PHP and Node.js to build robust and scalable server-side applications.</p>
+            <a href="applications_go_ahead.html" class="block text-center bg-orange-500 text-white p-2 rounded">Apply here</a>
+          </div>
+          <div class="bg-zinc-200 dark:bg-zinc-700 p-4 rounded-lg flex flex-col justify-between">
+            <div>
+              <h2 class="text-xl font-bold mb-2">UI/UX Designer</h2>
+              <p class="text-zinc-700 dark:text-zinc-300 mb-4">Join our team as a UI/UX designer to create engaging and intuitive user experiences for our web applications.</p>
+            </div>
+            <a href="applications_go_ahead.html" class="block text-center bg-orange-500 text-white p-2 rounded">Apply here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-gray-900 text-gray-300 py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-6 md:mb-0">
+        <h2 class="text-lg font-bold">HOTBEANS Web Development</h2>
+        <p class="mt-2">&copy; 2024 HOTBEANS. All rights reserved.</p>
+        <p class="mt-1">Contact: info@hotbeans.dev | +44 456 7890</p>
+      </div>
+      <div class="flex space-x-6">
+        <a href="#" aria-label="Instagram">
+          <img aria-hidden="true" alt="instagram" src="icons/instagram.png" class="w-6 h-6" />
+        </a>
+        <a href="#" aria-label="Facebook">
+          <img aria-hidden="true" alt="facebook" src="icons/facebook.png" class="w-6 h-6" />
+        </a>
+        <a href="#" aria-label="X">
+          <img aria-hidden="true" alt="x" src="icons/twitter.png" class="w-6 h-6" />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
